@@ -2,7 +2,7 @@
 
 html,
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 12px;
   margin: 0;
@@ -16,10 +16,6 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-.logo__container {
-  margin-top: 10px;
-}
-
 .nav {
   height: 100%;
 }
@@ -31,7 +27,7 @@ body {
   list-style: none;
 }
 
-.nav__list__item:not(:first-child) {
+.nav__item:not(:first-child) {
   margin-left: 20px;
 }
 
@@ -44,14 +40,15 @@ body {
   text-transform: uppercase;
   color: #000;
   transition: color 0.3s;
+  cursor: pointer;
 }
 
-.nav__link:hover {
+.nav__link:hover,
+.nav__link.is-active {
   color: #00acdc;
 }
 
 .nav__link.is-active {
-  color: #00acdc;
   position: relative;
 }
 
