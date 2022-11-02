@@ -16,10 +16,6 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-.nav {
-  height: 100%;
-}
-
 .nav__list {
   display: flex;
   margin: 0;
@@ -43,13 +39,13 @@ body {
   cursor: pointer;
 }
 
-.nav__link:hover,
-.nav__link.is-active {
+.nav__link:hover {
   color: #00acdc;
 }
 
 .nav__link.is-active {
   position: relative;
+  color: #00acdc;
 }
 
 .nav__link.is-active::after {
